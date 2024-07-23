@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .img {
+            box-sizing: border-box;
+            border: solid;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            transition: border-color 0.5s ease, opacity 0.5s ease;
+        }
+        .border-black {
+            border-color: black;
+        }
+        .border-blue {
+            border-color: blue;
+        }
+        .fade-out {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="container">
+        <h1 id="heading" class="heading">DOM Maniupulation</h1>
+        <p class="description" style="padding: 1rem; border-radius: 0.5rem; cursor: pointer; text-align: center;">
+            DOM (Document Object Model) manipulation in JavaScript allows you
+            to dynamically change the content, structure, and style of a webpage.
+        </p>
+        <button type="button" style="display: block; margin: 0 auto; cursor: pointer;">Change</button>
+        <ul>
+            <li>First</li>
+            <li>Second</li>
+        </ul>
+        <ol type="i">
+            <li class="li1">Item 1</li>
+            <li class="li2">Item 2</li>
+            <li class="li3">Item 3</li>
+            <li class="li4">Item 4</li>
+            <li class="li5">Item 5</li>
+        </ol>
+        <div class="image-container" style="width: 50%; height: 15rem; margin: 0 auto;">
+            <img class="img border-black" src="./download.jpeg" alt="imge" style="display: block; margin: 0 auto;">
+        </div>
+    </div>
+    <script src="DOM.js"></script>
+</body>
+</html>
