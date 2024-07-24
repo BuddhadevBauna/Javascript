@@ -20,10 +20,11 @@ console.log("..........................................");
 // Creating and appending elements
 console.log("Creating and appending elements:");
 const div = document.createElement('div'); 
+div.classList.add("container");
 div.textContent = "Create div element and add text content to it";
 document.body.appendChild(div);
 const li = document.createElement('li');
-li.textContent = "Third";
+li.append(document.createTextNode("Third"));
 document.querySelector('ul').appendChild(li);
 console.log("..........................................");
 
